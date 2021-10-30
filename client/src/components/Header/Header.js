@@ -2,7 +2,9 @@ import React from 'react';
 import {Container, Grid, Image} from "semantic-ui-react";
 import {Link} from "react-router-dom";
 import Logo from "../../assets/png/instaclone.png";
+import RightHeader from "./RightHeader";
 import "./Header.scss";
+
 
 export default function Header() {
     return (
@@ -18,7 +20,7 @@ export default function Header() {
                         <p>Buscador</p>
                     </Grid.Column>
                     <Grid.Column width={3}>
-                        <p>Options</p>
+                        <RightHeader/>
                     </Grid.Column>
                 </Grid>
             </Container>
