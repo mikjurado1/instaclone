@@ -6,17 +6,24 @@
   "author": "Michael Arturo Jurado Golles",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./index.js"
+    "dev": "nodemon ./index.js",
+    "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
     "apollo-server": "^2.22.2",
+    "aws-sdk": "^2.1022.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
+    "fs-capacitor": "^7.0.1",
     "graphql": "^15.5.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
+  },
+  "resolutions": {
+    "fs-capacitor": "^6.2.0",
+    "graphql-upload": "^11.0.0"
   }
 }
